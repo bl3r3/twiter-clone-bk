@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "migrations": "sequelize db:migrate",
+    "migrations": "npx sequelize-cli db:migrate",
     "start": "npm run migrations && node app.js"
   },
   "keywords": [],
@@ -19,7 +19,8 @@
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "pg": "^8.6.0",
-    "pg-hstore": "^2.3.4"
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.6.5"
   },
   "engines": {
     "node": "14.x"
