@@ -14,10 +14,6 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "postgres",
-    "password": "robertico1234$",
-    "database": "twitter_prod",
-    "host": "localhost",
     "dialect": "postgres",
     "use_env_variable": "DATABASE_URL"
   }
