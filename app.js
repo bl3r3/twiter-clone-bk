@@ -47,10 +47,9 @@ app.get("/reauthenticate", passport.authenticate('jwt', {session: false}) , (req
 
 //TEST 
 
-app.get("/", (req, res) =>{ res.send("Hello world")})
+app.get("/", (req, res) =>{ res.send({name: "Twitter-Clone"})})
 
-//Get Tweets TEST
-app.get("/tweets-test", getTweets)
+
 
 ///////// Listen app /////
 
