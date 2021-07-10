@@ -49,6 +49,9 @@ app.get("/reauthenticate", passport.authenticate('jwt', {session: false}) , (req
 
 app.get("/", (req, res) =>{ res.send("Hello world")})
 
+//Get Tweets TEST
+app.get("/tweets-test", getTweets)
+
 ///////// Listen app /////
 
 app.listen(port, async() =>{
