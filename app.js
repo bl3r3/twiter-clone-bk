@@ -48,7 +48,7 @@ app.get("/reauthenticate", passport.authenticate('jwt', {session: false}) , (req
 
 ///////// Listen app /////
 
-app.listen({port: port}, async() =>{
+app.listen(port, async() =>{
 	console.log("Server up LocalHost")
 	await sequelize.authenticate()
 	console.log("Database Connected")
