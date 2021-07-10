@@ -45,6 +45,9 @@ app.get("/reauthenticate", passport.authenticate('jwt', {session: false}) , (req
 	res.send(req.user)
 })
 
+//TEST 
+
+app.get("/test", (req, res) =>{ res.send("Hello world")})
 
 ///////// Listen app /////
 
